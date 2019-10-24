@@ -30,7 +30,7 @@ requirements:
   host:
     - python
     - flake8  # for testing during the build
-    - glib
+    - glib <=2.56
     - gobject-introspection 1.*
     - libffi
     - meson
@@ -38,7 +38,7 @@ requirements:
     - pytest
   run:
     - python
-    - glib
+    - glib <=2.56
     - gobject-introspection 1.*
     - libffi
     - libiconv  # on Windows we seem to need the conda-forge version here (see #15)
