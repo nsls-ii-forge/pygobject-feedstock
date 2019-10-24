@@ -27,15 +27,15 @@ requirements:
     - glib =2.56.* 
     - gobject-introspection =1.56.*
     - libffi
-    - pycairo =1.17.* # [py3k]
+    - pycairo
     - pytest
   run:
     - python
-    - cairo
+    - {{ pin_compatible('cairo') }}
+    - {{ pin_compatible('pycairo') }}
     - glib =2.56.*
     - gobject-introspection =1.56.*
     - libffi
-    - pycairo =1.17.* # [py3k]
 
 test:
   imports:
