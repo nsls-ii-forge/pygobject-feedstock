@@ -1,0 +1,8 @@
+channel_sources:
+  - nsls2forge,defaults
+channel_targets:
+  - nsls2forge main
+c_compiler_version:
+  - '4'  # [osx]
+cxx_compiler_version:
+  - '4'  # [osx]
