@@ -23,18 +23,19 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - glib <=2.56
+    - gobject-introspection 1.*
+    - libffi
     - m2-msys2-runtime  # [win]
+    - meson
     - ninja
+    - pycairo
+    - python
     - {{posix}}patch
     - {{native}}pkg-config
   host:
     - python
     - flake8  # for testing during the build
-    - glib <=2.56
-    - gobject-introspection 1.*
-    - libffi
-    - meson
-    - pycairo
     - pytest
   run:
     - python
