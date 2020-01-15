@@ -6,3 +6,7 @@ c_compiler_version:
   - '4'  # [osx]
 cxx_compiler_version:
   - '4'  # [osx]
+cairo:
+  - 1.14
+glib:
+  - 2.63
