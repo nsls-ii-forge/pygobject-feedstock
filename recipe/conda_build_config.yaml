@@ -2,10 +2,10 @@ channel_sources:
   - nsls2forge,defaults
 channel_targets:
   - nsls2forge main
-c_compiler_version:
-  - '4'  # [osx]
-cxx_compiler_version:
-  - '4'  # [osx]
+docker_image:
+  - nsls2/nsls2forge:latest
+cuda_compiler_version:
+  - None
 cairo:
   - 1.14
 glib:

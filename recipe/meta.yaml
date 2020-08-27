@@ -1,7 +1,7 @@
 {% set name = "pygobject" %}
-{% set version = "3.31.1" %}
+{% set version = "3.32.2" %}
 {% set majmin = '.'.join(version.split('.', 2)[:2]) %}
-{% set sha256 = "e2670219ca2ed4d1817b5ffb6ca086e61d54b0f95d3ee28a38e07f0f76a6d6f1" %}
+{% set sha256 = "c39ca2a28364b57fa00549c6e836346031e6b886c3ceabfd8ab4b4fed0a83611" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
-  skip: True  # [py<36 or not linux]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: true  # [py<36 or not linux]
 
 requirements:
   build:
@@ -44,4 +44,5 @@ test:
 about:
   home: http://www.gtk.org
   license: LGPL
+  license_file: COPYING
   summary: Access to GObject-based libraries in Python.
