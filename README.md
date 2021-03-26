@@ -1,13 +1,21 @@
 About pygobject
 ===============
 
-Home: http://www.gtk.org
+Home: https://pygobject.readthedocs.io
 
-Package license: LGPL
+Package license: LGPL-2.1-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/pygobject-feedstock/blob/master/LICENSE.txt)
 
-Summary: Access to GObject-based libraries in Python.
+Summary: Python bindings for GObject Introspection
+
+Development: https://git.gnome.org/browse/pygobject
+
+Documentation: https://pygobject.readthedocs.io
+
+PyGObject is a Python package which provides bindings for GObject based libraries
+such as GTK+, GStreamer, WebKitGTK+, GLib, GIO and many more.
+
 
 Current build status
 ====================
@@ -45,6 +53,48 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=137&branchName=master">
                   <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/pygobject-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.9" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_python3.7</td>
+              <td>
+                <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=137&branchName=master">
+                  <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/pygobject-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_python3.8</td>
+              <td>
+                <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=137&branchName=master">
+                  <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/pygobject-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_python3.9</td>
+              <td>
+                <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=137&branchName=master">
+                  <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/pygobject-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.9" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_python3.7</td>
+              <td>
+                <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=137&branchName=master">
+                  <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/pygobject-feedstock?branchName=master&jobName=win&configuration=win_64_python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_python3.8</td>
+              <td>
+                <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=137&branchName=master">
+                  <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/pygobject-feedstock?branchName=master&jobName=win&configuration=win_64_python3.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_python3.9</td>
+              <td>
+                <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=137&branchName=master">
+                  <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/pygobject-feedstock?branchName=master&jobName=win&configuration=win_64_python3.9" alt="variant">
                 </a>
               </td>
             </tr>
