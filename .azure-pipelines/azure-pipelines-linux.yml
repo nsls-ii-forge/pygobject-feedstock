@@ -8,19 +8,18 @@ jobs:
     vmImage: ubuntu-16.04
   strategy:
     matrix:
-      linux_64_python3.6:
-        CONFIG: linux_64_python3.6
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: nsls2/nsls2forge:latest
       linux_64_python3.7:
         CONFIG: linux_64_python3.7
         UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: nsls2/nsls2forge:latest
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
       linux_64_python3.8:
         CONFIG: linux_64_python3.8
         UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: nsls2/nsls2forge:latest
-    maxParallel: 8
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_64_python3.9:
+        CONFIG: linux_64_python3.9
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
   timeoutInMinutes: 360
 
   steps:

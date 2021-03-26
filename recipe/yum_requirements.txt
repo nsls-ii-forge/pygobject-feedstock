@@ -1,2 +1,9 @@
-libXrender
+libX11
+libXcomposite
+libXcursor
+libXdamage
 libXext
+libXfixes
+libXi
+libXinerama
+libXrandr
