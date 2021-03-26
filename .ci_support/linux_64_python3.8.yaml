@@ -3,7 +3,9 @@ c_compiler:
 c_compiler_version:
 - '7'
 cairo:
-- '1.14'
+- '1.16'
+cdt_name:
+- cos6
 channel_sources:
 - nsls2forge,defaults
 channel_targets:
@@ -13,11 +15,11 @@ cxx_compiler:
 cxx_compiler_version:
 - '7'
 docker_image:
-- nsls2/nsls2forge:latest
+- quay.io/condaforge/linux-anvil-comp7
 glib:
-- '2.63'
+- '2'
 libffi:
-- '3.2'
+- '3.3'
 pin_run_as_build:
   cairo:
     max_pin: x.x
@@ -30,3 +32,8 @@ python:
 - '3.8'
 target_platform:
 - linux-64
+zip_keys:
+- - c_compiler_version
+  - cxx_compiler_version
+- - cdt_name
+  - docker_image
