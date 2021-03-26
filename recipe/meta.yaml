@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<35]
+  skip: true  # [not linux or py<35]
 
 requirements:
   build:
@@ -36,22 +36,10 @@ requirements:
     - pycairo
 
 test:
-  requires:
-    - gtk3
-    - pkg-config
   imports:
     - gi
     - gi.repository.GLib
     - gi.repository.Gtk
-  commands:
-    # verify that header gets installed and can be located through pkg-config
-    {% set pc = "pygobject-3.0" %}
-    {% set header = "pygobject.h" %}
-    - test -f $PREFIX/include/{{ pc }}/{{ header }}  # [unix]
-    - test -f `pkg-config --variable=pygobjectincludedir --dont-define-prefix {{ pc }}`/{{ header }}  # [unix]
-    - if not exist %LIBRARY_INC%\\{{ pc }}\\{{ header }} exit 1  # [win]
-    - for /f "usebackq tokens=*" %%a in (`pkg-config --variable=pygobjectincludedir --dont-define-prefix {{ pc }}`) do if not exist "%%a/{{ header }}" exit 1  # [win]
-
 
 about:
   home: https://pygobject.readthedocs.io
