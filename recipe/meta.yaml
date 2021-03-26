@@ -20,6 +20,8 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - pep517
+    - pkg-config
   host:
     - python
     - pip
@@ -27,7 +29,6 @@ requirements:
     - glib
     - gobject-introspection
     - libffi
-    - pep517
     - pycairo
     - pytest
   run:
