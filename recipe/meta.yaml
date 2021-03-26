@@ -38,8 +38,6 @@ requirements:
 test:
   imports:
     - gi
-    - gi.repository.GLib
-    - gi.repository.Gtk
 
 about:
   home: https://pygobject.readthedocs.io
