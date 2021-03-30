@@ -1,7 +1,7 @@
 {% set name = "pygobject" %}
-{% set version = "3.40.0" %}
+{% set version = "3.40.1" %}
 {% set majmin = '.'.join(version.split('.', 2)[:2]) %}
-{% set sha256 = "67d61fac9f5aa83bf2edccbc286802ce0f1c3dde8f83103b7c765b91a6ed905f" %}
+{% set sha256 = "00c6d591f4cb40c335ab1fd3e8c17869ba15cfda54416fe363290af766790035" %}
 
 package:
   name: {{ name|lower }}
@@ -44,7 +44,7 @@ about:
   license: LGPL-2.1-or-later
   license_family: LGPL
   license_file: COPYING
-  summary: 'Python bindings for GObject Introspection'
+  summary: Python bindings for GObject Introspection
 
   description: |
     PyGObject is a Python package which provides bindings for GObject based libraries
